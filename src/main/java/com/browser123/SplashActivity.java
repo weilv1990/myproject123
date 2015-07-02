@@ -12,14 +12,14 @@ import android.webkit.WebView;
 public class SplashActivity extends Activity {
 
     private WebView webHolder;
-    //private WebSettings setting;
+    private WebSettings setting;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         webHolder = (WebView)findViewById(R.id.web_holder);
-        //setting = webHolder.getSettings();
+        setting = webHolder.getSettings();
         
 
     }
